@@ -1,3 +1,4 @@
+import { Link, Outlet } from "react-router-dom";
 import styled from "styled-components";
 
 const Header = () => {
@@ -34,8 +35,8 @@ const Header = () => {
         <img src="../logo.jpg" />
       </Logo>
       <Navigation>
-        <a>Home</a><span>|</span>
-        <a>About Us</a><span>|</span>
+        <Link to="/">Home</Link><span>|</span>
+        <Link to="/about">About</Link><span>|</span>
         <a>Contact US</a>
       </Navigation>
     </Header>
